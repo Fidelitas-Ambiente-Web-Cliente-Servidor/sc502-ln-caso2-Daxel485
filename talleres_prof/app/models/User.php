@@ -22,7 +22,7 @@ class User
     {
         $query = "INSERT INTO usuarios (username, password, rol) VALUES (?, ?, 'usuario')";
         $stmt = $this->conn->prepare($query);
-        $stmt->bind_param("ss", $username,  $password);
+        $stmt->bind_param("ss", $username, $password);
         $stmt->execute();
         return $stmt->affected_rows > 0;
     }

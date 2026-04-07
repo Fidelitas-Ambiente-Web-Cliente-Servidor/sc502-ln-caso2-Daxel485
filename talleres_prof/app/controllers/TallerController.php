@@ -25,28 +25,33 @@ class TallerController
         }
         require __DIR__ . '/../views/taller/listado.php';
     }
-    
+
     public function getTalleresJson()
     {
         if (!isset($_SESSION['id'])) {
             echo json_encode([]);
             return;
         }
-        
+
         $talleres = $this->tallerModel->getAllDisponibles();
         header('Content-Type: application/json');
         echo json_encode($talleres);
     }
-    
+
     public function solicitar()
     {
         if (!isset($_SESSION['id'])) {
             echo json_encode(['success' => false, 'error' => 'Debes iniciar sesión']);
             return;
         }
-        
+
         $tallerId = $_POST['taller_id'] ?? 0;
         $usuarioId = $_SESSION['id'];
 
+        // Crear la solicitud usando el modelo
+        $resultado = $this->solicitudModel->crear($tallerId, $usuarioId);
+
+        header('Content-Type: application/json');
+        echo json_encode($resultado);
     }
 }

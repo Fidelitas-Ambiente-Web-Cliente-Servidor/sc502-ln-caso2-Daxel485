@@ -17,7 +17,7 @@ $(function () {
                 dataType: 'json',
                 success: function (response) {
                     if (response.response === '00') {
-                        window.location.href = 'index.php?page=talleres';
+                        window.location.href = 'index.php?page=login';
                     } else {
                         $('#mensaje').text(response.message).css('color', 'red').show();
                     }

@@ -3,10 +3,10 @@
 class Database
 {
 
-    private $host = "db";
+    private $host = "localhost";
     private $db = "appdb";
-    private $user = "appuser";
-    private $pass = "apppass";
+    private $user = "root";
+    private $pass = "";
 
     public function connect()
     {

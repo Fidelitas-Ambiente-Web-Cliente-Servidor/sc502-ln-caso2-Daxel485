@@ -1,0 +1,30 @@
+/* ============================
+   Daxel485 - Sistema de Talleres
+   ============================ */
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f5f7;
+}
+
+nav {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 10px 16px;
+}
+
+.table-dark th {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-solicitar {
+    font-size: 0.85rem;
+}
+
+.alert {
+    border-radius: 8px;
+    font-size: 0.9rem;
+}

@@ -8,6 +8,7 @@
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
         rel="stylesheet">
+    <link rel="stylesheet" href="public/css/style.css">
     <script src="public/js/jquery-4.0.0.min.js"></script>
     <script src="public/js/auth.js"></script>
 </head>
@@ -35,8 +36,6 @@
         </button>
         <a href="index.php?page=registro" class="btn btn-secondary">Registrarse</a>
     </form>
-
-
 
 </body>
 
